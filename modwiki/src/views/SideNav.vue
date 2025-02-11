@@ -100,6 +100,6 @@ const toggleNav = () => {
 .menu-item span {
     font-size: 1rem;
     color: #fff;
-    margin-left: 10px; /* 确保文本在图标右侧 */
+    margin-left: 11px; /* 确保文本在图标右侧 */
 }
 </style>
