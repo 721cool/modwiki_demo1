@@ -15,8 +15,8 @@ import { kaiData,binData } from './component/playerData'
 
   
 
-  const kaiProps = kaiData()
-  const binProps = binData()
+  const kaiProps = kaiData();
+  const binProps = binData();
   </script>
   
   <style scoped>
