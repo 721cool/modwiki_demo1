@@ -1,0 +1,1 @@
+import{s as e,m as r}from"./mikasa-DUV9qqF5.js";import{c as s,b as a,o as t}from"./index-DMHLoEK_.js";const p={__name:"CIWS",setup(o){return(c,m)=>(t(),s("div",null,[a(e),a(r)]))}};export{p as default};
