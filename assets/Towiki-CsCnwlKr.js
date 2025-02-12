@@ -1,1 +1,0 @@
-import{_ as o,c as t,a,o as n}from"./index-B8AsP4jP.js";const r={};function s(c,e){return n(),t("div",null,e[0]||(e[0]=[a("p",null,"吃葡萄不吐葡萄皮",-1)]))}const _=o(r,[["render",s],["__scopeId","data-v-d8bfde20"]]);export{_ as default};
