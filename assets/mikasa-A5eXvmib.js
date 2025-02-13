@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as n,a as r}from"./index-DmkJVH2q.js";const c={},a={class:"kai"};function l(t,s){return n(),o("div",a,s[0]||(s[0]=[r("h1",null,"Hello World",-1)]))}const m=e(c,[["render",l]]),_={},i={class:"kai"};function d(t,s){return n(),o("div",i,s[0]||(s[0]=[r("h1",null,"Hello World",-1)]))}const u=e(_,[["render",d]]);export{u as m,m as s};
