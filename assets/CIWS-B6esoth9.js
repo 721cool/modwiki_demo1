@@ -1,0 +1,1 @@
+import{s as e,m as r}from"./mikasa-DB8ta-O_.js";import{c as s,b as a,o as t}from"./index-D4r8aSp2.js";const p={__name:"CIWS",setup(o){return(c,m)=>(t(),s("div",null,[a(e),a(r)]))}};export{p as default};
