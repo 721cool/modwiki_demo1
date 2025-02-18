@@ -11,15 +11,16 @@ div {
     display:flex;
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
-    width: 1000px;
-    height: 1000px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
 
 }
 div p {
-    color:aquamarine;
+    color:rgb(110, 29, 240);
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-font-size: large;
+font-size:60px;
+
  
 
 }

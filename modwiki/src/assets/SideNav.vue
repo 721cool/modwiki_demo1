@@ -1,13 +1,29 @@
+<template>
+    <div class="side-nav" :class="{ 'side-nav-collapsed': isCollapsed }">
+        <button @click="toggleNav" class="nav-button">
+            <img src="/CryptocurrencyColorEmc2.svg" alt="menu" class="nav-button-image">
+        </button>
+        <ul>
+            <SubMenu 
+                title="角色" 
+                icon="/UnjsAutomd.svg" 
+                :items="characterItems" 
+            />
+            <SubMenu 
+                title="武器" 
+                icon="/StreamlineEmojisOncomingFist1.svg" 
+                :items="weaponItems" 
+            />
+        </ul>
+    </div>
+</template>
+
 <script setup>
 import { ref } from 'vue';
 import SubMenu from '../components/menu.vue';
-import op from '/images/UnjsUnenv.svg'
- import player2 from '/images/UnjsUndocs.svg'
-import weapon1 from '/images/StreamlineEmojisOncomingFist1.svg'
-const imagePath = (filename) => {
-  return process.env.NODE_ENV === 'production' ? `/modwiki_demo1/images/${filename}` : `/images/${filename}`;
-};
+import op from '@/../public/UnjsAutomd.svg'
 
+const i = '@/../public'
 
 const routes = {
     home: '/',
@@ -21,40 +37,18 @@ const isCollapsed = ref(false);
 
 const characterItems = [
     { title: '饥荒世界', route: routes.character1, icon: op },
-    { title: '传奇宇宙', route: routes.character2, icon: player2 }
+    { title: '传奇宇宙', route: routes.character2, icon: op }
 ];
 
 const weaponItems = [
-    { title: '近战武器', route: routes.weapon1, icon: weapon1 },
-    { title: '远程武器', route: routes.weapon2, icon: weapon1 }
-   
+    { title: '近战武器', route: routes.weapon1, icon: '/StreamlineEmojisOncomingFist1.svg' },
+    { title: '远程武器', route: routes.weapon2, icon: '/StreamlineEmojisOncomingFist1.svg' }
 ];
 
 const toggleNav = () => {
     isCollapsed.value = !isCollapsed.value;
 };
 </script>
-<template>
-    <div class="side-nav" :class="{ 'side-nav-collapsed': isCollapsed }">
-        <button @click="toggleNav" class="nav-button">
-            <img src="/images/CryptocurrencyColorEmc2.svg" alt="menu" class="nav-button-image">
-        </button>
-        <ul>
-            <SubMenu 
-                title="角色" 
-                :icon=" imagePath('UnjsAutomd.svg')"
-                :items="characterItems" 
-            />
-            <SubMenu 
-                title="武器"
-                :icon="imagePath('StreamlineEmojisOncomingFist1.svg')"
-                :items="weaponItems" 
-            />
-        </ul>
-    </div>
-</template>
-
-
 
 <style scoped>
 .side-nav {

@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -19,7 +19,7 @@ const router = createRouter({
       name: '人物',
       component: () => import('../components/characters/wilson.vue'),
     },
-      {
+    {
       path: '/wilson',
       name: '威尔逊',
       component: () => import('../components/characters/kai.vue'),
@@ -34,7 +34,13 @@ const router = createRouter({
       name: '世达',
       component: () => import('../components/weapon/RGWS.vue'),
     },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('../views/Towiki.vue'),
+    },
   ],
 })
 
 export default router
+
